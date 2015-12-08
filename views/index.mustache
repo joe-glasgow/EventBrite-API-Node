@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	<h1>{{ title }}</h1>
+	<form class="event" method="POST" action="/submit">
+		<label for="name">Name</label>
+		<input name="name" placeholder="Name" value="name" type="text" id="name">
+		<label for="start">Start time</label>
+		<input name="start"placeholder="Start time" value="start time" type="text" id="start">
+		<label for="timezone">Start timezone</label>
+		<input name="timezone" laceholder="timezone" value="start timezone" type="text" id="timezone">
+		<label for="end">End time</label>
+		<input name="end" placeholder="end time" value="end time" type="text" id="end">
+		<label for="endTimezone">End timezone</label>
+		<input name="endTimezone" placeholder="timezone" value="end timezone" type="text" id="endTimezone">
+		<label for="currency">Currency</label>
+		<input name="currency" placeholder="Currency" value="currency" type="text" id="currency">
+		<input type="submit" value="Submit"/>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<script>
+	// post to create event
+	// $.ajax({url : 'https://www.eventbriteapi.com/v3/events/?token=OVJYRQ3E5UCTVNZGU5OP&event.name.html=bob%20smith&event.start.utc=2015-12-13T10:39:35Z&event.start.timezone=Europe/London&event.end.utc=2015-12-13T10:39:35Z&event.currency=GBP&event.end.timezone=Europe/London', type: 'POST', data : {}})
+	</script>
+</body>
+</html>
